@@ -1,0 +1,3 @@
+/** @license MIT License (c) copyright 2011-2013 original author or authors */
+
+!function(e){e(["require","./when"],function(e){var n,t,r,i,u;n=e("./when"),i=e;try{u=i("vertx"),t=function(e,n){return u.setTimer(n,e)},r=u.cancelTimer}catch(e){t=setTimeout,r=clearTimeout}return function(e,i){if("number"==typeof i){var u=i;i=e,e=u}return n.promise(function(u,o,f){var c=t(function(){o(new Error("timed out after "+e+"ms"))},e);n(i,function(e){r(c),u(e)},function(e){r(c),o(e)},f)})}})}("function"==typeof define&&define.amd?define:function(e){module.exports=e(require)});

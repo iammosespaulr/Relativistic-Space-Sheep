@@ -1,0 +1,20 @@
+permalink: /:year-:month-:day/:title
+markdown: rdiscount
+exclude: ["README.md", "CNAME", "LICENSE", "build", "config.rb", "Gruntfile.js", "package.json", "jshint.json"]
+
+title : "Relativistic Space Sheep"
+id : "80978581915"
+description : "See the Equivalence Principle in action!"
+thumb: "thumb.gif"
+version: "0.0.3"
+
+ml_url: "http://minutelabs.io"
+ml_library: "http://labs.minutelabs.io/library"
+ml_assets: "http://labs.minutelabs.io/assets"
+library_path: "library-build"
+
+show :
+  branding: true
+  details: true
+  comments: true
+

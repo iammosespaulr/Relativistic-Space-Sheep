@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div id="sim">
+    <canvas id="physics"></canvas>
+</div>
+
+ <div id="out-of-sight">
+    <p>The rocket is out of sight.</p>
+    <button id="catch-up" class="pop">Catch up</button>
+</div> 
+
+<div id="direction" class="left">
+    <p>See how the sheep get pushed around when the rocket accelerates, as if they are experiencing effects of gravity!</p>
+</div>
+<div id="instructions" class="right">
+    <img width="100" src="{{ site.library_path }}/images/wasd.png" class="thumb-left"/>
+    <p>Move the rocket by using keyboard arrow keys, WASD, joystick in the bottom right, or by dragging it.</p>
+</div>
+
+<button id="ctrl-grid" class="toggle">Grid</button>
+
+<div id="controls">
+
+    <div class="btn-group btns">
+        <button id="ctrl-grab-mode" class="pop toggle">Grab Mode</button>
+        <button id="ctrl-sheep" class="toggle on">Sheep</button>
+        <button id="ctrl-water" class="toggle on">Water</button>
+    </div>
+
+    <label>Zoom</label>
+    <div class="btn-group btns">
+        <button id="ctrl-zoom-in">+</button>
+        <button id="ctrl-zoom-out">-</button>
+    </div>
+
+    <div class="btns">
+        <button id="ctrl-brakes" class="danger">Brakes</button>
+    </div>
+
+    <div class="btns">
+        <button id="ctrl-booster" class="ok toggle">Booster</button>
+    </div>
+
+    <canvas id="joystick" width="176" height="176"></canvas>
+</div>
+
+<div id="com-panel">
+    <div class="meters">
+        <label>Speed:</label><data id="speed-meter"></data><br/>
+        (at full zoom)
+    </div>
+</div>

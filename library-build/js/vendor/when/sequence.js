@@ -1,0 +1,3 @@
+/** @license MIT License (c) copyright 2011-2013 original author or authors */
+
+!function(n){n(["require","./when"],function(n){var e,r;return e=n("./when"),r=Array.prototype.slice,function(n){function u(n){return t.push(n),t}var t=[];return e.all(r.call(arguments,1)).then(function(r){return e.reduce(n,function(n,t){return e(t.apply(null,r),u)},t)})}})}("function"==typeof define&&define.amd?define:function(n){module.exports=n(require)});

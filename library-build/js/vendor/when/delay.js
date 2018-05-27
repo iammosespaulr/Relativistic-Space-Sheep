@@ -1,0 +1,3 @@
+/** @license MIT License (c) copyright 2011-2013 original author or authors */
+
+!function(n){n(["require","./when"],function(n){var e,t,i,r;e=n("./when"),i=n;try{r=i("vertx").setTimer,t=function(n,e){return r(e,n)}}catch(n){t=setTimeout}return function(n,i){if("number"==typeof i){var r=i;i=n,n=r}return e.promise(function(r,u,f){e(i,function(e){t(function(){r(e)},n)},u,f)})}})}("function"==typeof define&&define.amd?define:function(n){module.exports=n(require)});

@@ -1,0 +1,1 @@
+define(["text","dot"],function(t,e){function n(t,e,n,i){r[t]=e,n(e)}function i(i,o,f,l){i in r?f(r[i]):t.get(o.toUrl(i),function(t){var r={render:e.template(t,a)};n(i,r,f,l)})}var r={},a={},o={varname:"it"};for(var f in e.templateSettings)a[f]=o[f]||e.templateSettings[f];return{load:i}});

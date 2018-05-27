@@ -1,0 +1,202 @@
+/* line 6, site.scss */
+html, body, #wrap-outer {
+  height: 100%;
+}
+
+/* line 10, site.scss */
+.thumb-left {
+  float: left;
+  margin: 0.5em 0.75em 0 0;
+}
+
+/* line 16, site.scss */
+.dg input {
+  line-height: 1.4;
+}
+/* line 20, site.scss */
+.dg .save-row {
+  display: none;
+}
+/* line 24, site.scss */
+.dg.main.a.has-save > ul {
+  margin-top: 0;
+}
+
+/* line 29, site.scss */
+#viewport {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url('../images/nightsky.png?1527317638') center center;
+  background-size: 1000px;
+}
+
+/* line 39, site.scss */
+#instructions,
+#direction {
+  color: #fff;
+  position: absolute;
+  top: 160px;
+  width: 316px;
+  -moz-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+/* line 47, site.scss */
+#instructions img,
+#direction img {
+  margin-top: 1.5em;
+}
+
+/* line 52, site.scss */
+#instructions {
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  margin-left: -3em;
+  margin-top: -300px;
+}
+
+/* line 61, site.scss */
+#direction {
+  opacity: 0;
+  top: auto;
+  bottom: 455px;
+  left: 30px;
+  background: #fff;
+  color: #1a1a1a;
+  padding: 0 1em;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+/* line 71, site.scss */
+#direction:after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid #fff;
+  border-color: #fff transparent transparent;
+}
+
+/* line 82, site.scss */
+#controls {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  padding: .75em;
+  width: 318px;
+  height: 253px;
+  background: #fff;
+  border: 1px solid gainsboro;
+  font-size: 14px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 95, site.scss */
+#controls .btn-group {
+  margin: 0;
+}
+/* line 98, site.scss */
+#controls .btns {
+  margin: 0 0 1em;
+}
+/* line 102, site.scss */
+#controls #joystick {
+  position: absolute;
+  bottom: 0.75em;
+  right: 14px;
+}
+
+/* line 109, site.scss */
+#ctrl-grid {
+  position: absolute;
+  bottom: 290px;
+  right: 10px;
+  z-index: 100;
+}
+
+/* line 116, site.scss */
+#com-panel {
+  position: absolute;
+  bottom: 354px;
+  left: 1px;
+  z-index: 130;
+}
+/* line 122, site.scss */
+#com-panel .meters {
+  color: #ededed;
+}
+/* line 125, site.scss */
+#com-panel .meters label {
+  margin-right: 1ex;
+}
+/* line 130, site.scss */
+#com-panel:before {
+  content: 'Rocket Cam';
+  display: block;
+  width: 400px;
+  text-align: center;
+  background: white;
+  z-index: 4;
+}
+
+/* line 140, site.scss */
+#out-of-sight {
+  display: none;
+  position: absolute;
+  bottom: 460px;
+  left: 0;
+  background: #ededed;
+  color: #00258f;
+  padding: 1em 2em;
+  z-index: 2;
+  text-align: center;
+}
+
+/* line 152, site.scss */
+#sim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/* line 161, site.scss */
+#sim canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* line 167, site.scss */
+#sim .physics-layer-main {
+  z-index: 1;
+}
+
+/* line 171, site.scss */
+#sim .physics-layer-parallax {
+  z-index: 0;
+}
+
+/* line 175, site.scss */
+#sim .physics-layer-rocket-cam {
+  opacity: 0.9;
+  top: auto;
+  bottom: 0;
+  background: url('../images/nightsky.png?1527317638') center center;
+  background-size: 1000px;
+  border: 1px solid #ededed;
+  z-index: 3;
+}
