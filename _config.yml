@@ -19,4 +19,4 @@ show :
   comments: true
 
 
-theme: jekyll-theme-slate
+theme: jekyll-theme-minimal
