@@ -18,3 +18,5 @@ show :
   details: true
   comments: true
 
+
+theme: jekyll-theme-cayman
